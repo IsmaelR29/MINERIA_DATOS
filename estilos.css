@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(15,23,42,.88),rgba(15,23,42,.88)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.overlay{
+    max-width:900px;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+header p{
+    font-size:1.2rem;
+    margin:10px 0;
+}
+
+.portada-box{
+    margin-top:30px;
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:#0f172a;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* NAV */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:20px;
+    gap:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* SECCIONES */
+
+section{
+    width:90%;
+    max-width:1300px;
+    margin:80px auto;
+}
+
+section h2{
+    font-size:2.7rem;
+    margin-bottom:40px;
+    color:#38bdf8;
+    text-align:center;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:25px;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+/* TIMELINE */
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.timeline-item{
+    background:#1e293b;
+    padding:30px;
+    border-left:5px solid #38bdf8;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+/* TABLAS */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+table th{
+    background:#38bdf8;
+    color:#0f172a;
+    padding:18px;
+}
+
+table td{
+    padding:18px;
+    background:#1e293b;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+/* LISTAS */
+
+.lista{
+    margin-top:20px;
+    padding-left:25px;
+}
+
+.lista li{
+    margin:12px 0;
+}
+
+/* GALERÍA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+    margin-top:40px;
+}
+
+.imagen{
+    background:#1e293b;
+    border-radius:25px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.imagen:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+.imagen img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+.imagen p{
+    padding:20px;
+    font-size:1rem;
+    font-weight:500;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+.dash-card{
+    background:linear-gradient(135deg,#38bdf8,#2563eb);
+    padding:45px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+}
+
+.dash-card h3{
+    margin-bottom:20px;
+}
+
+.dash-card span{
+    font-size:3rem;
+    font-weight:bold;
+}
+
+/* REFERENCIAS */
+
+.referencias li{
+    margin:20px 0;
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:50px;
+    background:#111827;
+    margin-top:100px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    section h2{
+        font-size:2rem;
+    }
+
+}
